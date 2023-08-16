@@ -69,4 +69,8 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/jenkins.service
 
 <img src="jc3.png">
 
+### understanding user story 
+
+<img src="user.png">
+
 
