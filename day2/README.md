@@ -52,3 +52,21 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/jenkins.service
  Main PID: 4006 (java)
 
 ```
+
+## to COnfigure CI or CD using jenkins there are various options we have
+
+<img src="v1.png">
+
+### job consist of 6 configuration steps 
+
+<img src="jc1.png">
+
+### a job also have given options after configuration 
+
+<img src="jc2.png">
+
+### A job build / execution result is having given options 
+
+<img src="jc3.png">
+
+
