@@ -54,5 +54,10 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service 
 sudo chmod 777 /var/run/docker.sock
 ```
 
+### understanding changes and automated build 
+
+<img src="autob.png">
+
+
 
 
