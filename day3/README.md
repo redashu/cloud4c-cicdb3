@@ -33,6 +33,11 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service 
      Docs: https://docs.docker.com
 ```
 
+### By default jenkins is not able to connect docker 
+
+<img src="prob.png">
+
+
 
 
 
