@@ -38,8 +38,21 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service 
 <img src="prob.png">
 
 
+### more understanding of jenkins integration 
 
+<img src="int.png">
 
+### adding jenkins backend user to docker group 
+
+```
+ sudo usermod -aG docker  jenkins
+```
+
+### if you don't want to restart your jenkins service 
+
+```
+sudo chmod 777 /var/run/docker.sock
+```
 
 
 
