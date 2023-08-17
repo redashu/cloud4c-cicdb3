@@ -58,6 +58,29 @@ sudo chmod 777 /var/run/docker.sock
 
 <img src="autob.png">
 
+### Build trigger using -- poll SCM 
+
+<img src="poll.png">
+
+### adding compose file to automated docker steps -- jenkins will call docker-compose 
+
+<img src="dc.png">
+
+### compose file
+
+```
+version: '3.8'
+services:
+  ashu-ui-code: # name of app change it 
+    image: ashu-web:appv$BUILD_NUMBER
+    build:
+      context: . # location of dockerfile 
+      dockerfile: Dockerfile # name of dockerfile 
+    container_name: ashu-web-c1 
+    ports:
+      - 1234:80 # left side port b/w 1024 - 5000 
+```
+
 
 
 
