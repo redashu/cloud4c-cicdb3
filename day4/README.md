@@ -88,4 +88,25 @@ services:
       - 1234:80 # left side port b/w 1024 - 5000 
 ```
 
+## Jenkins executors concept to increase concurrent build 
+
+<img src="exe.png">
+
+### jenkins data is stored in 
+
+```
+[root@ip-172-31-13-32 ~]# cd /var/lib/jenkins/
+[root@ip-172-31-13-32 jenkins]# ls
+%C                                                  jenkins.model.JenkinsLocationConfiguration.xml                    queue.xml
+config.xml                                          jenkins.mvn.GlobalMavenConfig.xml                                 queue.xml.bak
+hudson.model.UpdateCenter.xml                       jenkins.telemetry.Correlator.xml                                  secret.key
+hudson.plugins.emailext.ExtendedEmailPublisher.xml  jobs                                                              secret.key.not-so-secret
+hudson.plugins.git.GitTool.xml                      logs              
+```
+
+### executors and jenkins cluster 
+
+<img src="cls.png">
+
+
 
