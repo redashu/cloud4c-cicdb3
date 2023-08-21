@@ -62,7 +62,7 @@ pipeline {
             }
         }
         stage('checking docker images'){
-            stpes {
+            steps {
                 echo 'please wait checking docker images'
                 sh 'docker images'
             }
