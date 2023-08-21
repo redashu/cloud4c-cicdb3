@@ -71,3 +71,31 @@ pipeline {
 }
 
 ```
+
+### creating first single stage pipeline job 
+
+```
+pipeline {
+    agent any
+    // creating stages
+    stages{
+        // creating first stage for docker compose 
+        stage('checking git and doing docker compose'){
+            steps {
+                echo 'cloning git repo data'
+                git 'https://github.com/redashu/cloud4c-jenkins-webapp.git'
+                echo 'using docker compose '
+                sh 'docker-compose down'
+                sh 'docker-compose up -d --build'
+                sh 'sleep 2'
+                sh 'docker-compose ps'
+                echo 'checking personal images'
+                sh 'docker-compose images'
+            }
+            
+        }
+    }
+    
+}
+
+```
