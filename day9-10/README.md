@@ -127,6 +127,7 @@ pipeline {
                 echo 'manual horizental scaling '
                 sh 'kubectl scale deployment ashu-webapp --replicas 3 -n ashu-jk-deploy'
                 echo 'updating new docker image in existing deployment'
+                //                               name_of_deploy   name_of_container
                 sh 'kubectl set image deployment ashu-webapp ashu-cloud4c-app=dockerashu/ashu-cloud4c-app:version$BUILD_NUMBER -n ashu-jk-deploy'
                 echo 'checking rolling updates'
                 sh 'kubectl rollout status deployment  ashu-webapp -n  ashu-jk-deploy'
