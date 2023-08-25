@@ -49,6 +49,7 @@ pipeline {
             }
             steps {
                 echo 'lets use jenkinsfile way to build image'
+                 git branch: 'main', url: 'https://github.com/redashu/cloud4c-jenkins-webapp.git'
                 script {
                     def imageName = "dockerashu/ashu-cloud4c-app" // def to create variables 
                     def imageTag  = "version$BUILD_NUMBER"
